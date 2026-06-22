@@ -9,8 +9,7 @@ BouttonAjouterChoree.addEventListener("click", () => {
     ajouterChoree()
 });
 
-
-
+AfficherSemaineActuelle()
 
 
 

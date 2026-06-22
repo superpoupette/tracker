@@ -1,0 +1,19 @@
+body {
+    background-color: white;
+}
+
+#zoneChoreesEnCours{
+    display:flex;
+    gap: 20px;
+}
+
+#zoneAjouterChoree{
+    display:flex;
+    margin:20px;
+}
+
+#week{
+    display:flex;
+    gap: 20px;
+    text-align: center;
+}
