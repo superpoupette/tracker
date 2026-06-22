@@ -20,3 +20,5 @@ async function chargerDanses() {
 }
 
 chargerDanses()
+console.log(window)
+console.log(window.supabase)
