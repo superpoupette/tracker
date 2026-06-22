@@ -67,32 +67,20 @@ function ajouterChoree(){
     mesChorees.push(nouvelleChoree);
     console.log(mesChorees);
 
-    afficherNouvelleChoree(nouvelleChoree);
+    i=mesChorees.length;
+    console.log(i);
+
+    ChoreeEnCours=trouverChoreeEnCours();
+
+
+    //mise à jour interface
+    supprimerChoreesEnCours();
+    afficherChoreesEnCours(ChoreeEnCours);
+
+    
 }
 
-function afficherNouvelleChoree(nouvelleChoree){
-        let titre = document.createElement("h1");
-        titre.textContent =nouvelleChoree.titre+" - "+nouvelleChoree.artiste;
-        zoneChoreesEnCours.appendChild(titre);
-
-        let duree = document.createElement("p");
-        duree.textContent ="Durée : "+nouvelleChoree.duree+" min";
-        zoneChoreesEnCours.appendChild(duree);
-
-        let dureeApprentissage = document.createElement("p");
-        dureeApprentissage.id="duree"+nouvelleChoree.code;
-        dureeApprentissage.textContent ="Temps d'apprentissage: "+nouvelleChoree.dureeApprentissage+" min";
-        zoneChoreesEnCours.appendChild(dureeApprentissage);
-
-        let ajouterTemps = document.createElement("input");
-        ajouterTemps.type = "number";
-        zoneChoreesEnCours.appendChild(ajouterTemps);
-
-
-        let bouttonAjouterTemps = document.createElement("button");
-        bouttonAjouterTemps.innerHTML="Ajouter";
-        bouttonAjouterTemps.id="timer"+nouvelleChoree.code;
-        zoneChoreesEnCours.appendChild(bouttonAjouterTemps);
-
-        majDureeApprentissage(i,ajouterTemps);
+function supprimerChoreesEnCours(){
+    let zoneChoreesEnCours = document.getElementById("zoneChoreesEnCours");
+    zoneChoreesEnCours.textContent="";
 }
