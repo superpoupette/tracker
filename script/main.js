@@ -1,6 +1,6 @@
-import { chargerDanses } from 'supabase.js'
-import { trouverChoreeEnCours } from 'script.js'
-import { AfficherSemaineActuelle } from 'dates.js'
+import { chargerDanses } from './supabase.js'
+import { trouverChoreeEnCours } from './script.js'
+import { AfficherSemaineActuelle } from './dates.js'
 
 
 
