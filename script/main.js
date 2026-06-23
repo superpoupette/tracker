@@ -1,5 +1,6 @@
 
 ChoreeEnCours=trouverChoreeEnCours();
+console.log(ChoreeEnCours);
 afficherChoreesEnCours(ChoreeEnCours);
 
 

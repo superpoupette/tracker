@@ -24,3 +24,4 @@ let mesChorees = [
     dureeApprentissage:0,
     }
 ]
+
