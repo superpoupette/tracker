@@ -1,13 +1,7 @@
 
 //afficher uniquement les chorées encore en cours
-export function trouverChoreeEnCours(){
-    let ChoreeEnCours=[];
-    for (let i=0;i<mesChorees.length;i++){
-        if (mesChorees[i].etat==="en cours"){
-            ChoreeEnCours.push(mesChorees[i]);
-        }
-    }
-    return ChoreeEnCours;
+export function trouverChoreeEnCours(mesChorees){
+    return mesChorees.filter(c => c.etat === "en cours");
 }
 
 // afficher les chorées en cours dans la partie associée
