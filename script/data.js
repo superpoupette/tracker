@@ -1,4 +1,4 @@
-let mesChorees = [
+let mesChoreesLocal = [
     {
     code:"ItsMeIllit",
     artiste : "Illit",

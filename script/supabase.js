@@ -10,8 +10,14 @@ async function chargerDanses() {
     .from('Danse')
     .select('*')
 
-  console.log('data =', data)
-  console.log('error =', error)
+  if (error) {
+    console.error(error);
+    return [];
+  }
+
+  return data;
 }
 
-chargerDanses()
+
+const mesChorees = await chargerDanses();
+console.log(mesChorees);
