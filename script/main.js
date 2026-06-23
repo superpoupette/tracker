@@ -1,6 +1,6 @@
 import { chargerDanses } from './supabase.js'
 import { trouverChoreeEnCours } from './script.js'
-//import { AfficherSemaineActuelle } from './dates.js'
+import { AfficherSemaineActuelle } from './dates.js'
 
 
 
@@ -20,7 +20,7 @@ async function init() {
     ajouterChoree()
   })
 
-  //AfficherSemaineActuelle()
+  AfficherSemaineActuelle()
 }
 
 init()

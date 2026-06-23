@@ -1,6 +1,6 @@
 
 //afficher uniquement les chorées encore en cours
-function trouverChoreeEnCours(){
+export function trouverChoreeEnCours(){
     let ChoreeEnCours=[];
     for (let i=0;i<mesChorees.length;i++){
         if (mesChorees[i].etat==="en cours"){
@@ -11,7 +11,7 @@ function trouverChoreeEnCours(){
 }
 
 // afficher les chorées en cours dans la partie associée
-function afficherChoreesEnCours(ChoreeEnCours){
+export function afficherChoreesEnCours(ChoreeEnCours){
     let zoneChoreesEnCours = document.getElementById("zoneChoreesEnCours");
     for (let i=0;i<ChoreeEnCours.length;i++){
             let zoneChoree = document.createElement("div");
@@ -60,7 +60,7 @@ function majDureeApprentissage(i,ajouterTemps){
 }
 
 //ajouter une nouvelle choregraphie dans la base
-function ajouterChoree(){    
+export function ajouterChoree(){    
     let nouvelleChoree={};
     nouvelleChoree.code=ajouterTitre.value+ajouterArtiste.value;
     nouvelleChoree.artiste=ajouterArtiste.value;
@@ -84,7 +84,7 @@ function ajouterChoree(){
     
 }
 
-function supprimerChoreesEnCours(){
+export function supprimerChoreesEnCours(){
     let zoneChoreesEnCours = document.getElementById("zoneChoreesEnCours");
     zoneChoreesEnCours.textContent="";
 }

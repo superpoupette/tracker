@@ -1,4 +1,4 @@
-function AfficherSemaineActuelle(){
+export function AfficherSemaineActuelle(){
     let now = new Date();
 let week = [];
 
