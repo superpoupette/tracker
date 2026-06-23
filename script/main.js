@@ -1,3 +1,5 @@
+const mesChorees = await chargerDanses();
+console.log(mesChorees);
 
 ChoreeEnCours=trouverChoreeEnCours();
 console.log(ChoreeEnCours);
