@@ -10,6 +10,16 @@ function trouverChoreeEnCours(){
     return ChoreeEnCours;
 }
 
+function trouverChoreeEnCours2(){
+    let ChoreeEnCours=[];
+    for (let i=0;i<data.length;i++){
+        if (data[i].etat==="en cours"){
+            ChoreeEnCours.push(data[i]);
+        }
+    }
+    return ChoreeEnCours;
+}
+
 // afficher les chorées en cours dans la partie associée
 function afficherChoreesEnCours(ChoreeEnCours){
     let zoneChoreesEnCours = document.getElementById("zoneChoreesEnCours");
