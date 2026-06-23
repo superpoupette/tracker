@@ -1,17 +1,20 @@
 import { chargerDanses } from './supabase.js'
-import { trouverChoreeEnCours } from './script.js'
-import { afficherChoreesEnCours } from './script.js'
-import { ajouterChoree } from './script.js'
-import { supprimerChoreesEnCours } from './script.js'
+import {
+  trouverChoreeEnCours,
+  afficherChoreesEnCours,
+  ajouterChoree,
+  supprimerChoreesEnCours
+} from './script.js'
+
 import { AfficherSemaineActuelle } from './dates.js'
 
 
-
 async function init() {
-  const mesChorees = await chargerDanses()
+
+  let mesChorees = await chargerDanses()
   console.log(mesChorees)
 
-  const ChoreeEnCours = trouverChoreeEnCours(mesChorees)
+  let ChoreeEnCours = trouverChoreeEnCours(mesChorees)
   console.log(ChoreeEnCours)
 
   afficherChoreesEnCours(ChoreeEnCours)
@@ -19,8 +22,20 @@ async function init() {
   const BouttonAjouterChoree = document.getElementById("BouttonAjouterChoree")
 
   BouttonAjouterChoree.addEventListener("click", () => {
+
     console.log("ok")
-    ajouterChoree()
+
+    // 1. ajout
+    mesChorees = ajouterChoree(mesChorees)
+
+    // 2. recalcul des chorées en cours
+    ChoreeEnCours = trouverChoreeEnCours(mesChorees)
+
+    // 3. reset affichage
+    supprimerChoreesEnCours()
+
+    // 4. réaffichage
+    afficherChoreesEnCours(ChoreeEnCours)
   })
 
   AfficherSemaineActuelle()
