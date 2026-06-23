@@ -8,7 +8,7 @@ async function init() {
   const mesChorees = await chargerDanses()
   console.log(mesChorees)
 
-  const ChoreeEnCours = trouverChoreeEnCours()
+  const ChoreeEnCours = trouverChoreeEnCours(mesChorees)
   console.log(ChoreeEnCours)
 
   afficherChoreesEnCours(ChoreeEnCours)
