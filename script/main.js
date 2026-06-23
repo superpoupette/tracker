@@ -1,5 +1,8 @@
 import { chargerDanses } from './supabase.js'
 import { trouverChoreeEnCours } from './script.js'
+import { afficherChoreesEnCours } from './script.js'
+import { ajouterChoree } from './script.js'
+import { supprimerChoreesEnCours } from './script.js'
 import { AfficherSemaineActuelle } from './dates.js'
 
 
