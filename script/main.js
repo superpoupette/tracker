@@ -1,4 +1,8 @@
 import { chargerDanses } from './supabase.js'
+import { trouverChoreeEnCours } from './script.js'
+import { AfficherSemaineActuelle } from './dates.js'
+
+
 
 async function init() {
   const mesChorees = await chargerDanses()
