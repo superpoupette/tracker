@@ -19,5 +19,3 @@ async function chargerDanses() {
 }
 
 
-const mesChorees = await chargerDanses();
-console.log(mesChorees);
