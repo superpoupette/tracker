@@ -1,6 +1,7 @@
 import { 
   chargerDanses,
-  chargerTracker
+  chargerTracker,
+  ajouterLigneTracker
  } from './supabase.js'
 
 import {
