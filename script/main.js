@@ -2,7 +2,7 @@ import {
   chargerDanses,
   chargerTracker
  } from './supabase.js'
- 
+
 import {
   trouverChoreeEnCours,
   afficherChoreesEnCours,
@@ -20,6 +20,12 @@ async function init() {
   //charger les données de tracker
   let mesData = await chargerTracker();
   console.log(mesData);
+  //modifier tracker
+  await ajouterLigneTracker({
+    date: "2026-06-22",
+    sport: 8,
+    sommeil:6
+  })
 
   let ChoreeEnCours = trouverChoreeEnCours(mesChorees)
 

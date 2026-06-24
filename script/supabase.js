@@ -32,3 +32,11 @@ export async function chargerTracker() {
   return data
 }
 
+export async function ajouterLigneTracker(ligne){
+  const { data, error } = await supabase
+  .from('Tracker')
+  .insert([ligne])
+  .select()
+
+  return data
+}
