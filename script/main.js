@@ -10,12 +10,14 @@ import { AfficherSemaineActuelle } from './dates.js'
 
 
 async function init() {
+  //charger les données de chorées
+  let mesChorees = await chargerDanses();
 
-  let mesChorees = await chargerDanses()
-  console.log(mesChorees)
+  //charger les données de tracker
+  let mesData = await chargerTracker();
+  console.log(mesData);
 
   let ChoreeEnCours = trouverChoreeEnCours(mesChorees)
-  console.log(ChoreeEnCours)
 
   afficherChoreesEnCours(ChoreeEnCours)
 

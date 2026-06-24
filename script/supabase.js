@@ -19,3 +19,16 @@ export async function chargerDanses() {
 }
 
 
+export async function chargerTracker() {
+  const { data, error } = await supabase
+    .from('Tracker')
+    .select('*')
+
+  if (error) {
+    console.error(error)
+    return []
+  }
+
+  return data
+}
+
