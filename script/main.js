@@ -1,4 +1,8 @@
-import { chargerDanses } from './supabase.js'
+import { 
+  chargerDanses,
+  chargerTracker
+ } from './supabase.js'
+ 
 import {
   trouverChoreeEnCours,
   afficherChoreesEnCours,
