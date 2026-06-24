@@ -17,6 +17,9 @@ for (let i = 0; i < 8; i++) {
     let dateLundi= document.getElementById("dateLundi").innerHTML=week[1];
     let dateMardi= document.getElementById("dateMardi").innerHTML=week[2];
     let dateMercredi= document.getElementById("dateMercredi").innerHTML=week[3];
-    
+    let dateJeudi= document.getElementById("dateJeudi").innerHTML=week[4];
+    let dateVendredi= document.getElementById("dateVendredi").innerHTML=week[5];
+    let dateSamedi= document.getElementById("dateSamedi").innerHTML=week[6];
+    let dateDimanche= document.getElementById("dateDimanche").innerHTML=week[6];    
 }  
 

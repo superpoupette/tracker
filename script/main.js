@@ -22,11 +22,11 @@ async function init() {
   let mesData = await chargerTracker();
   console.log(mesData);
   //modifier tracker
-  await ajouterLigneTracker({
-    sommeil:6,
-    date: "2026-06-22",
-    sport: 45
-  })
+  //await ajouterLigneTracker({
+  //  sommeil:6,
+  //  date: "2026-06-22",
+  //  sport: 45
+  //})
 
   let ChoreeEnCours = trouverChoreeEnCours(mesChorees)
 
